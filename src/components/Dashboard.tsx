@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'graphing_capabilities' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_capabilities')}
+          className={activeTab === 'graphing_and_plotting_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_and_plotting_functions')}
         >
-          Graphing Capabilities
+          Graphing And Plotting Functions
         </button>
         <button 
-          className={activeTab === 'real_time_collaboration' ? 'active' : ''}
-          onClick={() => setActiveTab('real_time_collaboration')}
+          className={activeTab === 'ai_powered_suggestions' ? 'active' : ''}
+          onClick={() => setActiveTab('ai_powered_suggestions')}
         >
-          Real Time Collaboration
+          Ai Powered Suggestions
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'graphing_capabilities' && (
+        {activeTab === 'graphing_and_plotting_functions' && (
           <div className="tab-content">
-            <h2>Graphing Capabilities</h2>
-            <p>Manage your graphing capabilities here.</p>
+            <h2>Graphing and Plotting Functions</h2>
+            <p>Manage your graphing and plotting functions here.</p>
           </div>
         )}
 
-        {activeTab === 'real_time_collaboration' && (
+        {activeTab === 'ai_powered_suggestions' && (
           <div className="tab-content">
-            <h2>Real-Time Collaboration</h2>
-            <p>Manage your real time collaboration here.</p>
+            <h2>AI-Powered Suggestions</h2>
+            <p>Manage your ai powered suggestions here.</p>
           </div>
         )}
       </div>
