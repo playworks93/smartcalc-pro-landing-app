@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import CalculatorDisplay from './components/CalculatorDisplay'
-import ButtonPanel from './components/ButtonPanel'
-import HistoryLog from './components/HistoryLog'
-import ThemeSelector from './components/ThemeSelector'
-import GraphViewer from './components/GraphViewer'
+import CalculatorButton from './components/CalculatorButton'
+import HistoryPanel from './components/HistoryPanel'
+import AnalyticsDashboard from './components/AnalyticsDashboard'
+import CollaborationPanel from './components/CollaborationPanel'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SmartCalc Pro</h1>
-          <p className="tagline">Empowering Precision in Every Calculation</p>
+          <p className="tagline">Revolutionizing Calculation Experience</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -45,11 +45,11 @@ function App() {
           <h3>Key Features:</h3>
           <ul>
           <li>Basic Arithmetic Operations</li>
-          <li>Scientific Functions (sin, cos, tan)</li>
-          <li>Graphing Capabilities for Functions</li>
-          <li>History Log of Calculations</li>
-          <li>Customizable Themes</li>
-          <li>Real-time Collaboration with Other Users</li>
+          <li>Advanced Scientific Calculations</li>
+          <li>Data Visualization and Analytics</li>
+          <li>Real-time Collaboration with Peers</li>
+          <li>User-Customizable Interface</li>
+          <li>History of Calculations</li>
           </ul>
         </div>
         <p>&copy; 2025 SmartCalc Pro. Built with React + TypeScript + Vite</p>
