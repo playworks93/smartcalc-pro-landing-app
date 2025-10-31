@@ -5,11 +5,11 @@ SmartCalc Pro - Built with React + TypeScript + Vite
 ## Features
 
 - Basic Arithmetic Operations
-- Graphing Capabilities
+- Graphing and Plotting Functions
+- AI-Powered Suggestions
+- Advanced Statistical Analysis
 - Real-Time Collaboration
-- Custom Formula Creation
-- Unit Conversion Tools
-- History of Calculations
+- Customizable User Interface
 
 ## Tech Stack
 
