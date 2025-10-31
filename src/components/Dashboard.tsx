@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'scientific_functions_(sin,_cos,_tan)' ? 'active' : ''}
-          onClick={() => setActiveTab('scientific_functions_(sin,_cos,_tan)')}
+          className={activeTab === 'advanced_scientific_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_scientific_calculations')}
         >
-          Scientific Functions (Sin, Cos, Tan)
+          Advanced Scientific Calculations
         </button>
         <button 
-          className={activeTab === 'graphing_capabilities_for_functions' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_capabilities_for_functions')}
+          className={activeTab === 'data_visualization_and_analytics' ? 'active' : ''}
+          onClick={() => setActiveTab('data_visualization_and_analytics')}
         >
-          Graphing Capabilities For Functions
+          Data Visualization And Analytics
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'scientific_functions_(sin,_cos,_tan)' && (
+        {activeTab === 'advanced_scientific_calculations' && (
           <div className="tab-content">
-            <h2>Scientific Functions (sin, cos, tan)</h2>
-            <p>Manage your scientific functions (sin, cos, tan) here.</p>
+            <h2>Advanced Scientific Calculations</h2>
+            <p>Manage your advanced scientific calculations here.</p>
           </div>
         )}
 
-        {activeTab === 'graphing_capabilities_for_functions' && (
+        {activeTab === 'data_visualization_and_analytics' && (
           <div className="tab-content">
-            <h2>Graphing Capabilities for Functions</h2>
-            <p>Manage your graphing capabilities for functions here.</p>
+            <h2>Data Visualization and Analytics</h2>
+            <p>Manage your data visualization and analytics here.</p>
           </div>
         )}
       </div>
