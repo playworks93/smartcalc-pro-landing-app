@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'graphing_and_plotting_functions' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_and_plotting_functions')}
+          className={activeTab === 'graphing_capabilities' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_capabilities')}
         >
-          Graphing And Plotting Functions
+          Graphing Capabilities
         </button>
         <button 
-          className={activeTab === 'ai_powered_suggestions' ? 'active' : ''}
-          onClick={() => setActiveTab('ai_powered_suggestions')}
+          className={activeTab === 'data_import_and_export' ? 'active' : ''}
+          onClick={() => setActiveTab('data_import_and_export')}
         >
-          Ai Powered Suggestions
+          Data Import And Export
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'graphing_and_plotting_functions' && (
+        {activeTab === 'graphing_capabilities' && (
           <div className="tab-content">
-            <h2>Graphing and Plotting Functions</h2>
-            <p>Manage your graphing and plotting functions here.</p>
+            <h2>Graphing Capabilities</h2>
+            <p>Manage your graphing capabilities here.</p>
           </div>
         )}
 
-        {activeTab === 'ai_powered_suggestions' && (
+        {activeTab === 'data_import_and_export' && (
           <div className="tab-content">
-            <h2>AI-Powered Suggestions</h2>
-            <p>Manage your ai powered suggestions here.</p>
+            <h2>Data Import and Export</h2>
+            <p>Manage your data import and export here.</p>
           </div>
         )}
       </div>
