@@ -5,11 +5,11 @@ SmartCalc Pro - Built with React + TypeScript + Vite
 ## Features
 
 - Basic Arithmetic Operations
-- Scientific Functions (sin, cos, tan)
-- Graphing Capabilities for Functions
-- History Log of Calculations
-- Customizable Themes
-- Real-time Collaboration with Other Users
+- Advanced Scientific Calculations
+- Data Visualization and Analytics
+- Real-time Collaboration with Peers
+- User-Customizable Interface
+- History of Calculations
 
 ## Tech Stack
 
