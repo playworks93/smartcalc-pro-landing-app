@@ -27,10 +27,10 @@ const Dashboard = (props: DashboardProps) => {
           Graphing Capabilities
         </button>
         <button 
-          className={activeTab === 'scientific_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('scientific_calculations')}
+          className={activeTab === 'real_time_collaboration' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_collaboration')}
         >
-          Scientific Calculations
+          Real Time Collaboration
         </button>
       </nav>
 
@@ -69,10 +69,10 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'scientific_calculations' && (
+        {activeTab === 'real_time_collaboration' && (
           <div className="tab-content">
-            <h2>Scientific Calculations</h2>
-            <p>Manage your scientific calculations here.</p>
+            <h2>Real-Time Collaboration</h2>
+            <p>Manage your real time collaboration here.</p>
           </div>
         )}
       </div>
