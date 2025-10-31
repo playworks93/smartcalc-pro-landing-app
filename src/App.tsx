@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import CalculatorDisplay from './components/CalculatorDisplay'
-import ButtonPanel from './components/ButtonPanel'
-import HistoryLog from './components/HistoryLog'
+import InputPanel from './components/InputPanel'
 import GraphingTool from './components/GraphingTool'
-import SettingsModal from './components/SettingsModal'
+import HistoryLog from './components/HistoryLog'
+import SettingsPanel from './components/SettingsPanel'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SmartCalc Pro</h1>
-          <p className="tagline">Advanced Calculations Made Easy</p>
+          <p className="tagline">Your Advanced Calculation Companion</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -45,11 +45,11 @@ function App() {
           <h3>Key Features:</h3>
           <ul>
           <li>Basic Arithmetic Operations</li>
-          <li>Graphing Capabilities</li>
+          <li>Graphing and Plotting Functions</li>
+          <li>AI-Powered Suggestions</li>
+          <li>Advanced Statistical Analysis</li>
           <li>Real-Time Collaboration</li>
-          <li>Custom Formula Creation</li>
-          <li>Unit Conversion Tools</li>
-          <li>History of Calculations</li>
+          <li>Customizable User Interface</li>
           </ul>
         </div>
         <p>&copy; 2025 SmartCalc Pro. Built with React + TypeScript + Vite</p>
